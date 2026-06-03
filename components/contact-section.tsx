@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Send, CheckCircle } from "lucide-react"
+import { Send, CheckCircle, Loader2 } from "lucide-react"
 
 const inquiryTypes = [
   { value: "buying", label: "Buying in NYC" },
@@ -18,14 +18,36 @@ export function ContactSection() {
     email: "",
     phone: "",
     inquiryType: "",
+    message: "",
   })
+  const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState("")
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission here
-    console.log("Form submitted:", formData)
-    setIsSubmitted(true)
+    setIsSubmitting(true)
+    setError("")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      setIsSubmitted(true)
+    } catch {
+      setError("Failed to send message. Please try again or email directly at anna@annabnn.com")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -125,14 +147,46 @@ export function ContactSection() {
                   </select>
                 </div>
 
+                {/* Message */}
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
+                    Message (Optional)
+                  </label>
+                  <textarea
+                    id="message"
+                    rows={4}
+                    className="w-full px-4 py-3 bg-background border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all duration-300 resize-none"
+                    placeholder="Tell me more about what you're looking for..."
+                    value={formData.message}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                  />
+                </div>
+
+                {/* Error Message */}
+                {error && (
+                  <div className="p-4 bg-red-50 border border-red-200 rounded-lg text-red-700 text-sm">
+                    {error}
+                  </div>
+                )}
+
                 {/* Submit Button */}
                 <Button
                   type="submit"
                   size="lg"
-                  className="w-full bg-foreground text-background hover:bg-foreground/90 transition-all duration-300"
+                  disabled={isSubmitting}
+                  className="w-full bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 disabled:opacity-70"
                 >
-                  Send Message
-                  <Send className="ml-2 h-4 w-4" />
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      Send Message
+                      <Send className="ml-2 h-4 w-4" />
+                    </>
+                  )}
                 </Button>
               </div>
             </form>
