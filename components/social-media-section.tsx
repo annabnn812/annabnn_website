@@ -1,51 +1,49 @@
-import { Play } from "lucide-react"
+"use client";
+import { Play } from "lucide-react";
 
+// 1. Updated with strings to handle long IDs correctly
 const mediaItems = [
-  { id: 1, type: "vertical", views: "1.2M" },
-  { id: 2, type: "vertical", views: "890K" },
-  { id: 3, type: "vertical", views: "2.1M" },
-  { id: 4, type: "vertical", views: "567K" },
-  { id: 5, type: "vertical", views: "1.8M" },
-  { id: 6, type: "vertical", views: "432K" },
-]
+  
+  { id: "opFu76pyK6I"},
+  { id: "1LLiTcs4tMU"},
+  { id: "6vbGTrysr_s"},
+  { id: "6LTOsOov6Ec"},
+  { id: "2mF-r2r3SAo"},
+  { id: "hm0o7uFWhV0"},
+];
 
 export function SocialMediaSection() {
   return (
-    <section id="media" className="py-20 md:py-28 bg-muted">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
-            Content & Social Media
-          </p>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground text-balance">
-            Join Millions Watching NYC Real Estate Insight
-          </h2>
-          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Market tours, educational content, and behind-the-scenes looks at the NYC real estate world.
-          </p>
-        </div>
+     <section id="media" className="py-20 md:py-28 bg-muted">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+            Content & Social Media
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-foreground text-balance">
+            Join Millions Watching NYC Real Estate Insight
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Market tours, educational content, and behind-the-scenes looks at the NYC real estate world.
+          </p>
+        </div>
 
-        {/* Social Media Feed Grid */}
+        {/* Social Media Feed Grid */}
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {mediaItems.map((item) => (
             <div
               key={item.id}
-              className="group relative aspect-[9/16] bg-background rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300"
+               className="group relative aspect-[9/16] bg-background rounded-xl overflow-hidden cursor-pointer shadow-sm hover:shadow-lg transition-all duration-300"
             >
-              {/* Placeholder Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary to-muted" />
-              
-              {/* Play Button Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-80 group-hover:opacity-100 transition-opacity duration-300">
-                <div className="w-12 h-12 bg-background/90 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Play className="h-5 w-5 text-foreground ml-0.5" fill="currentColor" />
-                </div>
-              </div>
-              
-              {/* View Count Badge */}
-              <div className="absolute bottom-3 left-3 bg-background/80 backdrop-blur-sm rounded-md px-2 py-1">
-                <span className="text-xs font-medium text-foreground">{item.views} views</span>
-              </div>
+              {/* 2. Optimized Iframe */}
+              <iframe
+                src={`https://www.youtube.com/embed/${item.id}`}
+                className="w-full h-full border-0"
+                allowFullScreen
+                scrolling="no"
+                title={`TikTok video ${item.id}`}
+              />
             </div>
           ))}
         </div>
@@ -53,7 +51,7 @@ export function SocialMediaSection() {
         {/* Social Links */}
         <div className="mt-12 flex justify-center gap-6">
           <a
-            href="https://www.instagram.com/annabnn/"
+            href="https://www.instagram.com/annabnn812/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
@@ -64,7 +62,7 @@ export function SocialMediaSection() {
             <span className="text-sm font-medium">Instagram</span>
           </a>
           <a
-            href="https://www.tiktok.com/@annabnn"
+            href="https://www.tiktok.com/@anna_ny_real_estate"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"
@@ -75,7 +73,7 @@ export function SocialMediaSection() {
             <span className="text-sm font-medium">TikTok</span>
           </a>
           <a
-            href="https://www.youtube.com/@annabnn"
+            href="https://www.youtube.com/@abnn812"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors duration-300"

@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Image from "next/image"
 
 export function HeroSection() {
   return (
@@ -26,7 +27,7 @@ export function HeroSection() {
                 className="bg-foreground text-background hover:bg-foreground/90 transition-all duration-300"
               >
                 <Link href="#nyc-real-estate">
-                  View NYC Listings
+                  View My Listings
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
@@ -47,9 +48,13 @@ export function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-muted to-secondary" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center p-8">
-                  <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-background/20 flex items-center justify-center">
-                    <span className="text-5xl font-bold text-foreground/40">AK</span>
-                  </div>
+                  <Image
+                              src= "/IMG_05611.jpg"
+                              alt="Anna Kolbasova"
+                              fill
+                              className="object-cover cursor-pointer"
+                              priority
+                            />
                   <p className="text-sm text-muted-foreground">Professional Portrait</p>
                 </div>
               </div>

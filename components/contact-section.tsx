@@ -1,8 +1,9 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Send, CheckCircle, Loader2 } from "lucide-react"
+import Turnstile from "react-turnstile"
 
 const inquiryTypes = [
   { value: "buying", label: "Buying in NYC" },
@@ -23,9 +24,19 @@ export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState("")
+  const [captchaToken, setCaptchaToken] = useState("")
+  
+  // Use a ref to target the turnstile instance if we need to reset it
+  const turnstileRef = useRef<any>(null)
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
+    
+    if (!captchaToken) {
+      setError("Please complete the security check.")
+      return
+    }
+
     setIsSubmitting(true)
     setError("")
 
@@ -35,7 +46,11 @@ export function ContactSection() {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        // FIX: Spreading formData and appending the captchaToken explicitly
+        body: JSON.stringify({
+          ...formData,
+          captchaToken,
+        }),
       })
 
       if (!response.ok) {
@@ -44,7 +59,9 @@ export function ContactSection() {
 
       setIsSubmitted(true)
     } catch {
-      setError("Failed to send message. Please try again or email directly at anna@annabnn.com")
+      setError("Failed to send message. Please try again or email directly at annak@realprof.us")
+      // Reset token state and widget on error
+      setCaptchaToken("")
     } finally {
       setIsSubmitting(false)
     }
@@ -169,11 +186,20 @@ export function ContactSection() {
                   </div>
                 )}
 
+                {/* Turnstile Captcha Container */}
+                <div className="flex justify-center w-full overflow-hidden py-2">
+                  <Turnstile
+                    sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+                    onVerify={(token) => setCaptchaToken(token)}
+                    onExpire={() => setCaptchaToken("")}
+                  />
+                </div>
+
                 {/* Submit Button */}
                 <Button
                   type="submit"
                   size="lg"
-                  disabled={isSubmitting}
+                  disabled={!captchaToken || isSubmitting}
                   className="w-full bg-foreground text-background hover:bg-foreground/90 transition-all duration-300 disabled:opacity-70"
                 >
                   {isSubmitting ? (

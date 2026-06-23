@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Building2, Home, ArrowUpRight } from "lucide-react"
+import Image from "next/image"
 
 type Tab = "nyc" | "solutions"
 
@@ -24,12 +25,12 @@ export function DualFocusSection() {
 
         {/* Tab Navigation */}
         <div className="flex justify-center mb-12">
-          <div className="inline-flex bg-muted rounded-lg p-1">
+          <div className="inline-flex bg-[#F4F4F5] border border-neutral-200 rounded-xl p-1.5 shadow-inner">
             <button
               onClick={() => setActiveTab("nyc")}
               className={`px-6 py-3 rounded-md text-sm font-medium transition-all duration-300 ${
                 activeTab === "nyc"
-                  ? "bg-background text-foreground shadow-sm"
+                  ? "bg-[#D7D3D2] text-neutral-900 shadow-md transform scale-[1.02]"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -39,7 +40,7 @@ export function DualFocusSection() {
               onClick={() => setActiveTab("solutions")}
               className={`px-6 py-3 rounded-md text-sm font-medium transition-all duration-300 ${
                 activeTab === "solutions"
-                  ? "bg-background text-foreground shadow-sm"
+                  ? "bg-[#D7D3D2] text-neutral-900 shadow-md transform scale-[1.02]"
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
@@ -88,9 +89,12 @@ export function DualFocusSection() {
               </div>
               <div className="order-1 md:order-2">
                 <div className="aspect-square bg-secondary rounded-2xl overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                    NYC Skyline / Property Image
-                  </div>
+                  <Image
+                        src= "/listing-5.png"
+                        alt="NY Real Estate"
+                        width={500}
+                        height={500}
+                        />
                 </div>
               </div>
             </div>
@@ -131,9 +135,12 @@ export function DualFocusSection() {
               </div>
               <div className="order-1 md:order-2">
                 <div className="aspect-square bg-secondary rounded-2xl overflow-hidden">
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                    Property Solutions Image
-                  </div>
+                  <Image
+                        src= "/RealPro.png"
+                        alt="RealPro Solutions"
+                        width={500}
+                        height={500}
+                        />
                 </div>
               </div>
             </div>

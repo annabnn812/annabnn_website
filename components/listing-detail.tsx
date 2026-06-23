@@ -1,8 +1,10 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useRef } from "react"
 import Image from "next/image"
 import Link from "next/link"
+import Turnstile from "react-turnstile"
+import { CheckCircle, Loader2, Phone } from "lucide-react"
 import { 
   ArrowLeft, 
   Bed, 
@@ -11,8 +13,6 @@ import {
   MapPin, 
   Calendar,
   Check,
-  Share2,
-  Heart,
   ChevronLeft,
   ChevronRight,
   Play,
@@ -112,7 +112,6 @@ function ImageGallery({ images, title }: { images: Listing["images"]; title: str
         )}
       </div>
 
-      {/* Fullscreen Modal */}
       {isFullscreen && (
         <div className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center">
           <button
@@ -160,7 +159,6 @@ function ImageGallery({ images, title }: { images: Listing["images"]; title: str
 function VideoSection({ videoUrl }: { videoUrl: string }) {
   const [isPlaying, setIsPlaying] = useState(false)
   
-  // Extract TikTok video ID for embed
   const getTikTokEmbed = (url: string) => {
     const match = url.match(/video\/(\d+)/)
     return match ? match[1] : null
@@ -269,97 +267,177 @@ function InquiryForm({ listing }: { listing: Listing }) {
     message: `I'm interested in ${listing.address}. Please contact me with more information.`
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState("")
+  const [captchaToken, setCaptchaToken] = useState("")
+  
+  const turnstileRef = useRef<any>(null)
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
-    alert("Thank you for your inquiry! I will get back to you within 24 hours.")
+    
+    if (!captchaToken) {
+      setError("Please complete the security check.")
+      return
+    }
+
+    setIsSubmitting(true)
+    setError("")
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...formData,
+          inquiryType: "property-inquiry", 
+          captchaToken, // FIX: Injected token mapping into the server payload
+        }),
+      })
+
+      if (!response.ok) {
+        throw new Error("Failed to send message")
+      }
+
+      setIsSubmitted(true)
+    } catch {
+      setError("Failed to send message. Please try again or email directly at annak@realprof.us")
+      setCaptchaToken("") // Reset token placeholder on runtime error
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
-    <div className="bg-card rounded-xl border border-border p-6 sticky top-24">
+    <div className="bg-card rounded-xl border border-border p-6 sticky top-24 shadow-sm">
       <div className="mb-6">
         <p className="text-3xl font-semibold text-foreground">
           {formatPrice(listing.price, listing.type)}
         </p>
         {listing.type === "rent" && (
-          <p className="text-sm text-muted-foreground mt-1">Monthly rent</p>
+          <p className="text-sm text-muted-foreground mt-1">With leasing terms</p>
         )}
       </div>
 
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
-            Full Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20"
-            required
-          />
+      {isSubmitted ? (
+        <div className="bg-muted rounded-xl p-8 text-center transition-all duration-300">
+          <CheckCircle className="h-10 w-10 text-foreground mx-auto mb-4 animate-bounce" />
+          <h3 className="text-xl font-semibold text-foreground mb-2">Inquiry Sent</h3>
+          <p className="text-sm text-muted-foreground">
+            Thank you! I will review the details for {listing.address} and reach out to you within 24 hours.
+          </p>
         </div>
+      ) : (
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label htmlFor="inquiry-name" className="block text-sm font-medium text-foreground mb-1.5">
+              Full Name
+            </label>
+            <input
+              type="text"
+              id="inquiry-name"
+              value={formData.name}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+              placeholder="Your name"
+              required
+              disabled={isSubmitting}
+            />
+          </div>
 
-        <div>
-          <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
-            Email
-          </label>
-          <input
-            type="email"
-            id="email"
-            value={formData.email}
-            onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20"
-            required
-          />
-        </div>
+          <div>
+            <label htmlFor="inquiry-email" className="block text-sm font-medium text-foreground mb-1.5">
+              Email
+            </label>
+            <input
+              type="email"
+              id="inquiry-email"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+              placeholder="you@example.com"
+              required
+              disabled={isSubmitting}
+            />
+          </div>
 
-        <div>
-          <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">
-            Phone
-          </label>
-          <input
-            type="tel"
-            id="phone"
-            value={formData.phone}
-            onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20"
-          />
-        </div>
+          <div>
+            <label htmlFor="inquiry-phone" className="block text-sm font-medium text-foreground mb-1.5">
+              Phone
+            </label>
+            <input
+              type="tel"
+              id="inquiry-phone"
+              value={formData.phone}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 transition-all"
+              placeholder="(555) 123-4567"
+              disabled={isSubmitting}
+            />
+          </div>
 
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
-            Message
-          </label>
-          <textarea
-            id="message"
-            rows={4}
-            value={formData.message}
-            onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-            className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 resize-none"
-            required
-          />
-        </div>
+          <div>
+            <label htmlFor="inquiry-message" className="block text-sm font-medium text-foreground mb-1.5">
+              Message
+            </label>
+            <textarea
+              id="inquiry-message"
+              rows={4}
+              value={formData.message}
+              onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+              className="w-full px-4 py-2.5 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-foreground/20 resize-none transition-all"
+              required
+              disabled={isSubmitting}
+            />
+          </div>
 
-        <Button 
-          type="submit" 
-          className="w-full bg-foreground text-background hover:bg-foreground/90"
-          size="lg"
-        >
-          Request Information
-        </Button>
+          {error && (
+            <div className="p-3 bg-red-50 border border-red-200 rounded-lg text-red-700 text-xs">
+              {error}
+            </div>
+          )}
 
-        <Button 
-          type="button" 
-          variant="outline"
-          className="w-full border-foreground/20"
-          size="lg"
-          onClick={() => window.location.href = "tel:+1234567890"}
-        >
-          Call Now
-        </Button>
-      </form>
+          {/* Turnstile Captcha Container layout formatting matching style presets */}
+          <div className="flex justify-center w-full overflow-hidden py-1.5">
+            <Turnstile
+              sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+              onVerify={(token) => setCaptchaToken(token)}
+              onExpire={() => setCaptchaToken("")}
+            />
+          </div>
+
+          <Button
+            type="submit"
+            className="w-full bg-foreground text-background hover:bg-foreground/90 transition-all"
+            size="lg"
+            disabled={!captchaToken || isSubmitting}
+          >
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Sending Request...
+              </>
+            ) : (
+              "Request Information"
+            )}
+          </Button>
+
+          <Button
+            type="button"
+            variant="outline"
+            className="w-full border-border hover:bg-muted"
+            size="lg"
+            onClick={() => (window.location.href = "tel:+1(551)202-5550")}
+            disabled={isSubmitting}
+          >
+            <Phone className="mr-2 h-4 w-4" />
+            Call Now
+          </Button>
+        </form>
+      )}
 
       <div className="mt-6 pt-6 border-t border-border">
         <div className="flex items-center gap-3 text-sm text-muted-foreground">
@@ -382,7 +460,6 @@ export function ListingDetail({ listing }: { listing: Listing }) {
 
   return (
     <main className="min-h-screen bg-background">
-      {/* Header */}
       <div className="sticky top-0 z-40 bg-background/95 backdrop-blur-md border-b border-border">
         <div className="container mx-auto px-4 md:px-6 py-4">
           <div className="flex items-center justify-between">
@@ -393,27 +470,15 @@ export function ListingDetail({ listing }: { listing: Listing }) {
               <ArrowLeft className="h-4 w-4" />
               <span>Back to {isArchived ? "Archive" : "Listings"}</span>
             </Link>
-            
-            <div className="flex items-center gap-2">
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Heart className="h-4 w-4" />
-              </Button>
-              <Button variant="ghost" size="icon" className="h-9 w-9">
-                <Share2 className="h-4 w-4" />
-              </Button>
-            </div>
           </div>
         </div>
       </div>
 
       <div className="container mx-auto px-4 md:px-6 py-8">
-        {/* Image Gallery */}
         <ImageGallery images={listing.images} title={listing.title} />
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-8">
-          {/* Main Content */}
           <div className="lg:col-span-2 space-y-8">
-            {/* Title & Location */}
             <div>
               <div className="flex flex-wrap items-center gap-2 mb-3">
                 <Badge className={statusBadge.className}>
@@ -439,7 +504,6 @@ export function ListingDetail({ listing }: { listing: Listing }) {
               </div>
             </div>
 
-            {/* Quick Stats */}
             <div className="flex flex-wrap gap-6 py-6 border-y border-border">
               <div className="flex items-center gap-2">
                 <Bed className="h-5 w-5 text-muted-foreground" />
@@ -473,15 +537,15 @@ export function ListingDetail({ listing }: { listing: Listing }) {
               </div>
             </div>
 
-            {/* Description */}
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-4">About This Property</h2>
-              <p className="text-muted-foreground leading-relaxed">
-                {listing.description}
-              </p>
+              <div className="space-y-6 text-neutral-700 leading-relaxed">
+                {listing.description.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
             </div>
 
-            {/* Features */}
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-4">Features & Amenities</h2>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -494,17 +558,14 @@ export function ListingDetail({ listing }: { listing: Listing }) {
               </div>
             </div>
 
-            {/* Floor Plan */}
             {listing.floorPlanImage && (
               <FloorPlanSection floorPlanImage={listing.floorPlanImage} title={listing.title} />
             )}
 
-            {/* Video Tour */}
             {listing.videoUrl && (
               <VideoSection videoUrl={listing.videoUrl} />
             )}
 
-            {/* Location */}
             <div>
               <h2 className="text-xl font-semibold text-foreground mb-4">Location</h2>
               <div className="bg-muted rounded-xl aspect-[16/9] flex items-center justify-center">
@@ -517,7 +578,6 @@ export function ListingDetail({ listing }: { listing: Listing }) {
             </div>
           </div>
 
-          {/* Sidebar - Inquiry Form */}
           <div className="lg:col-span-1">
             <InquiryForm listing={listing} />
           </div>

@@ -48,14 +48,14 @@ export function Footer() {
             <ul className="space-y-3 text-background/70">
               <li>
                 <a href="mailto:anna@annabnn.com" className="hover:text-background transition-colors duration-300">
-                  anna@annabnn.com
+                  annak@realprof.us
                 </a>
               </li>
               <li>New York, NY</li>
             </ul>
             <div className="mt-6 flex gap-4">
               <a
-                href="https://www.instagram.com/annabnn/"
+                href="https://www.instagram.com/annabnn812/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors duration-300"
@@ -66,7 +66,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/annabnn/"
+                href="https://www.linkedin.com/in/anna-kolbasova/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors duration-300"
@@ -77,7 +77,7 @@ export function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.tiktok.com/@annabnn"
+                href="https://www.tiktok.com/@anna_ny_real_estate"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-background/70 hover:text-background transition-colors duration-300"
