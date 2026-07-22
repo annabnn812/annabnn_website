@@ -48,7 +48,7 @@ export const listings: Listing[] = [
         "91 Grand Avenue offers a virtual doorman service and is ideally located just moments from Myrtle Avenues many shops, restaurants, cafes, and neighborhood conveniences.",
          "Photos are virtually staged.",
 
-      
+      ], 
 features: [
       "Washer/Dryer In-Unit",
       "Dishwasher",
