@@ -45,7 +45,8 @@ export const listings: Listing[] = [
        "This loft-style home features dual north and west exposures, oversized windows, high ceilings, and an open-concept kitchen and living area that create a bright, airy, and spacious feel throughout. The fully renovated sleek modern kitchen is finished with custom cabinetry, quartz countertops, and top-of-the-line Bosch stainless steel appliances, including a dishwasher.",
         "The primary bedroom comfortably accommodates a king-size bed with additional furniture and features a large double-door closet and an en-suite bathroom. The second bedroom is ideal as a guest room, home office, or nursery. Additional conveniences include an in-home washer and dryer, as well as direct access to the expansive private terrace from the living room and both bedrooms.",
         "The 764 SF terrace offers endless possibilities for outdoor living. Create your own garden, entertain friends and family, dine al fresco, or simply relax while taking in the skyline views above the city.",
-        "91 Grand Avenue offers a virtual doorman service and is ideally located just moments from Myrtle Avenue’s many shops, restaurants, cafes, and neighborhood conveniences.
+        "91 Grand Avenue offers a virtual doorman service and is ideally located just moments from Myrtle Avenues many shops, restaurants, cafes, and neighborhood conveniences.",
+         "Photos are virtually staged.",
 
 Photos are virtually staged.",
       
