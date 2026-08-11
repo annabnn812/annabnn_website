@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, Bed, Bath, Square, MapPin, Calendar } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
-import { getArchivedListings, formatPrice, type Listing, type ListingStatus } from "@/lib/listings-data"
+import { getArchivedListings, formatPrice, type Listing, type ListingStatus } from "@/lib/listings"
 
 export const metadata: Metadata = {
   title: "Past Sales & Rentals | Anna Kolbasova",

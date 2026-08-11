@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation"
-import { getListingById, getActiveListings, getArchivedListings } from "@/lib/listings-data"
+import { getListingById, getActiveListings, getArchivedListings } from "@/lib/listings"
 import { ListingDetail } from "@/components/listing-detail"
 
 export async function generateStaticParams() {

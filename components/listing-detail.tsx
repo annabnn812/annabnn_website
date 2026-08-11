@@ -20,7 +20,7 @@ import {
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { type Listing, type ListingStatus, formatPrice } from "@/lib/listings-data"
+import { type Listing, type ListingStatus, formatPrice } from "@/lib/listings"
 
 function getStatusBadge(status: ListingStatus) {
   const variants: Record<ListingStatus, { label: string; className: string }> = {

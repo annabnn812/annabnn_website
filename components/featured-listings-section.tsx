@@ -6,7 +6,7 @@ import Link from "next/link"
 import { Bed, Bath, Square, MapPin, ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { getActiveListings, formatPrice, type Listing, type ListingStatus } from "@/lib/listings-data"
+import { getActiveListings, formatPrice, type Listing, type ListingStatus } from "@/lib/listings"
 
 function getStatusBadge(status: ListingStatus) {
   const variants: Record<ListingStatus, { label: string; className: string }> = {

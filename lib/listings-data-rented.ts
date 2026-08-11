@@ -1,0 +1,146 @@
+import { Listing } from "./listings"
+
+export const listings: Listing[] = [
+ 
+  {
+    id: "3Eleven_2419",
+    title: "3ELEVEN, a premium 1-bedroom, 1-bathroom apartmen",
+    address: "311 11th Avenue, Unit 2419",
+    neighborhood: "Chelsea, NY, 10001",
+    price: 4995,
+    type: "rent",
+    status: "rented",
+    beds: 1,
+    baths: 1,
+    sqft: 590,
+    description: [
+     ""
+    ],
+    features: [
+      "Pets allowed",
+      "Central air",
+      "View City, Skyline",
+      "Chef's Kitchen",
+      "Miele Appliances",
+      "Washer/Dryer",
+      "Dishwasher",
+      "Bike room",
+      "Elevator",
+      "Package room",
+      "Concierge",
+      "Laundry in building",
+      "Storage space",
+      "Doorman",
+      "Live-in super",
+      "Gym",
+      "Media room",
+      "Garden",
+      "Roof deck",
+    ],
+    images: [
+      { url: "/listings/3Eleven1.jpg", alt: "Dramatic loft living space" },
+      { url: "/listings/3Eleven2.jpg", alt: "Chef's kitchen" },
+      { url: "/listings/3Eleven3.jpg", alt: "Primary bedroom" },
+      { url: "/listings/3Eleven4.jpg", alt: "Architectural details" },
+     
+    ],
+    floorPlanImage: "/listings/3Eleven.jpg",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7566841909398752526",
+    dateAdded: "2026-06-10",
+   
+  },
+  {
+    id: "TheForten_1610",
+    title: "Forten at Columbia, a premium 1-bedroom, 1-bathroom apartmen",
+    address: "410 West 126th Street, Unit 1610",
+    neighborhood: "West Harlem, NY, 10027",
+    price: 4116,
+    type: "rent",
+    status: "rented",
+    beds: 1,
+    baths: 1,
+    sqft: 622,
+    description: [
+      ""
+    ],
+    features: [
+      "Pets allowed",
+      "Central air",
+      "View City, Skyline",
+      "Chef's Kitchen",
+      "Miele Appliances",
+      "Washer/Dryer",
+      "Dishwasher",
+      "Bike room",
+      "Elevator",
+      "Package room",
+      "Concierge",
+      "Laundry in building",
+      "Storage space",
+      "Doorman",
+      "Live-in super",
+      "Gym",
+      "Media room",
+      "Garden",
+      "Roof deck",
+    ],
+    images: [
+      { url: "/listings/Forten1.jpg", alt: "Dramatic loft living space" },
+      { url: "/listings/Forten2.jpg", alt: "Chef's kitchen" },
+      { url: "/listings/Forten3.jpg", alt: "Primary bedroom" },
+      { url: "/listings/Forten4.jpg", alt: "Architectural details" },
+     
+    ],
+    floorPlanImage: "/listings/Forten.jpg",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7551257153990921486",
+    dateAdded: "2026-01-04"
+  },
+  {
+    id: "TheSoMa_3219",
+    title: "The Soma, Studio + Office",
+    address: "25 Water Street, Unit 3219",
+    neighborhood: "Financial District,  New York, NY 10004",
+    price: 5150,
+    type: "rent",
+    status: "rented",
+    beds: 0,
+    baths: 1,
+    sqft: 400,
+    description: [
+     ""
+    ],
+    features: [
+      "Pets allowed",
+      "Central air",
+      "View City, Skyline",
+      "Chef's Kitchen",
+      "Miele Appliances",
+      "Washer/Dryer",
+      "Dishwasher",
+      "Bike room",
+      "Elevator",
+      "Package room",
+      "Concierge",
+      "Laundry in building",
+      "Storage space",
+      "Doorman",
+      "Live-in super",
+      "Gym",
+      "Media room",
+      "Garden",
+      "Roof deck",
+    ],
+    images: [
+      { url: "/listings/Soma1.jpg", alt: "Dramatic loft living space" },
+      { url: "/listings/Soma2.jpg", alt: "Chef's kitchen" },
+      { url: "/listings/Soma3.jpg", alt: "Primary bedroom" },
+      { url: "/listings/Soma4.jpg", alt: "Architectural details" },
+     
+    ],
+    floorPlanImage: "/listings/Soma.jpg",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7487654460852817195",
+    dateAdded: "2026-06-18"
+  },
+  
+]
+
