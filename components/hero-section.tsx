@@ -37,7 +37,7 @@ export function HeroSection() {
                 variant="outline"
                 className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
               >
-                <Link href="#property-solutions">Property Solutions</Link>
+                <Link href="#dual-professional-focus">Property Solutions</Link>
               </Button>
             </div>
           </div>

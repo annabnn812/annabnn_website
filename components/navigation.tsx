@@ -10,7 +10,7 @@ const navLinks = [
   { href: "#listings", label: "Listings" },
   { href: "/archive", label: "Past Sales" },
  /* { href: "#nyc-real-estate", label: "NYC Real Estate" },*/
-  { href: "#property-solutions", label: "Property Solutions" },
+  { href: "#dual-professional-focus", label: "Property Solutions" },
   { href: "#media", label: "Media" },
 ]
 
