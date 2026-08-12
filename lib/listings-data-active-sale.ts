@@ -757,7 +757,7 @@ features: [
     title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
     address: "30-78 29th Street, Unit 4B",
     neighborhood: "Astoria, NY 11102",
-    price: 1040000,
+    price: 1080000,
     type: "sale",
     status: "pending",
     beds: 2,
