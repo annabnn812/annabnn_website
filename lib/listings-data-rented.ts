@@ -1,6 +1,58 @@
 import { Listing } from "./listings"
 
 export const listings: Listing[] = [
+   {
+    id: "300_West_30th_Street_PHB",
+    title: "Penthouse B at 300 West 30th Street, a premium 1-bedroom, 1-bathroom apartmen",
+    address: "300 West 30th Street, Unit PHB",
+    neighborhood: "Chelsea, NY, 10001",
+    price: 6300,
+    type: "rent",
+    status: "rented",
+    beds: 1,
+    baths: 1,
+    sqft: 622,
+    description: [
+      "Welcome to Penthouse B at 300 West 30th Street, a premium 1-bedroom, 1-bathroom apartment on the highest residential floor. With only two units on this level, this pristine penthouse offers an exceptionally quiet, private, and elevated living experience on the Chelsea and Penn District border.",
+      "Dramatic floor-to-ceiling windows flood the apartment with natural light from its southwest exposure and frame serene garden views. The open-concept layout features wide-plank white oak flooring and a windowed chef's kitchen custom designed by Workshop/APD, complete with integrated Miele appliances and white marble countertops. The king-size bedroom offers deep custom closets, while the spa-like bath features radiant heated floors. An in-unit Miele washer and dryer is included for ultimate convenience.",
+      "Residents enjoy luxury amenities including a 24-hour doorman, a modern fitness center, a second-floor courtyard with grills, and a 12th-floor Sky Terrace with views of Hudson Yards and the Empire State Building. Co-working lounges and bike storage are also available.",
+      "Located moments from Moynihan Train Hall and Penn Station, you have immediate access to over ten subway lines and PATH trains. The High Line, Hudson Yards, and Chelsea galleries are all just a short walk away. Available for immediate occupancy. Please contact us to schedule a private tour.",
+    ],
+    features: [
+      "Pets allowed",
+      "Central air",
+      "View City, Skyline",
+      "Chef's Kitchen",
+      "Miele Appliances",
+      "Washer/Dryer",
+      "Dishwasher",
+      "Bike room",
+      "Elevator",
+      "Package room",
+      "Concierge",
+      "Laundry in building",
+      "Storage space",
+      "Doorman",
+      "Live-in super",
+      "Gym",
+      "Media room",
+      "Garden",
+      "Roof deck",
+    ],
+    images: [
+      { url: "/listings/PHB1.jpg", alt: "Dramatic loft living space" },
+      { url: "/listings/PHB2.jpg", alt: "Chef's kitchen" },
+      { url: "/listings/PHB3.jpg", alt: "Primary bedroom" },
+      { url: "/listings/PHB4.jpg", alt: "Architectural details" },
+      { url: "/listings/PHB5.jpg", alt: "Dramatic loft living space" },
+      { url: "/listings/PHB6.jpg", alt: "Chef's kitchen" },
+      { url: "/listings/PHB7.jpg", alt: "Primary bedroom" },
+      { url: "/listings/PHB8.jpg", alt: "Architectural details" },
+    ],
+    floorPlanImage: "/listings/PHB.jpg",
+    videoUrl: "https://www.tiktok.com/@annabnn/video/example5",
+    dateAdded: "2026-06-10"
+  },
  
   {
     id: "3Eleven_2419",
