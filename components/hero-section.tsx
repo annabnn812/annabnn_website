@@ -26,7 +26,7 @@ export function HeroSection() {
                 size="lg"
                 className="bg-foreground text-background hover:bg-foreground/90 transition-all duration-300"
               >
-                <Link href="#nyc-real-estate">
+                <Link href="#listings">
                   View My Listings
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
@@ -37,7 +37,7 @@ export function HeroSection() {
                 variant="outline"
                 className="border-foreground text-foreground hover:bg-foreground hover:text-background transition-all duration-300"
               >
-                <Link href="#property-solutions">Distressed Property Solutions</Link>
+                <Link href="#property-solutions">Property Solutions</Link>
               </Button>
             </div>
           </div>
@@ -55,7 +55,6 @@ export function HeroSection() {
                               className="object-cover cursor-pointer"
                               priority
                             />
-                  <p className="text-sm text-muted-foreground">Professional Portrait</p>
                 </div>
               </div>
             </div>
