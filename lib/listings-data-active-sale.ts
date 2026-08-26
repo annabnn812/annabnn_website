@@ -1,7 +1,7 @@
 import { Listing } from "./listings"
 
 export const listings: Listing[] = [
-  {
+  /*{
     id: "91_Grand_Avenue_4B",
     title: "Welcome home to Residence 4B at 91 Grand Avenue",
     address: "91 Grand Avenue, Unit 4B",
@@ -52,7 +52,7 @@ features: [
     floorPlanImage: "/listings/91 Grand Ave 4B_floor_plan.jpg",
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/",
     dateAdded: "2026-06-15"
-  },
+  },*/
   /*{
     id: "80_Riverside_Boulevard_8E",
     title: "Rare Riverside Gem with a 2500 SF Private Terrace & Hot Tub",
@@ -184,6 +184,68 @@ features: [
     ],
     floorPlanImage: "/listings/7A.jpg",
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
+    dateAdded: "2026-06-15"
+  },
+  {
+    id: "TheParisian_6C",
+    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    address: "30-78 29th Street, Unit 6C",
+    neighborhood: "Astoria, NY 11102",
+    price: 1215000,
+    type: "sale",
+    status: "active",
+    beds: 2,
+    baths: 2,
+    sqft: 759,
+    description: [
+      "Residence 6C is a thoughtfully designed two-bedroom, two-bathroom home at THE PARISIAN, offering 759 square feet of interior living space and private storage included. The residence features a practical split-bedroom layout, with the living and dining area positioned between both bedrooms to create a comfortable separation between shared and private spaces. A proper entry leads into the open main living area, where the kitchen connects naturally to the room while still feeling clearly defined for everyday use. Interiors are finished in THE PARISIAN’s calm and refined material palette, with oversized floor-to-ceiling windows, 7.5-inch wide-plank white oak flooring, solid wood interior doors, integrated dimmable LED lighting, USB/USB-C outlets throughout, and central heating and cooling with concealed linear diffusers.",
+     
+      "The kitchen is designed with a clean European sensibility, featuring natural oak cabinetry, Taj Mahal quartz countertops and backsplash in a leathered finish, gas cooking, under-cabinet LED lighting, a Kohler Simplice faucet, and a fully integrated Fisher & Paykel appliance suite with paneled refrigerator and dishwasher.",
+      "The bathrooms continue the same understated design language, with oversized porcelain tile, floating vanities with rounded edges, fluted wood detailing, integrated sinks, custom backlit medicine cabinets, Kohler fixtures in warm metallic finishes, hand-finished alabaster lighting, and Nuheat radiant-heated floors.",
+      "Additional features include an in-unit washer and dryer, a Comelit smart video intercom system, and a private storage cage included with the residence. With its two-bedroom, two-bathroom layout, practical split-bedroom configuration, elevated finishes, and included private storage, Residence 6C offers a polished and highly functional home within THE PARISIAN.",
+      "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
+      "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
+      "Exclusive Sales and Marketing Agent: Acre NY Realty Inc. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. The complete offering terms are in an Offering Plan available from Sponsor. File No. CD25-0330. Sponsor: 3078 LLC, 2160 North Central Road, Suite 108, Fort Lee, NJ 07024. All artist’s renderings, images, floor plans, finishes, furnishings, amenities, and other details are for representational purposes only and are subject to variances and changes in accordance with the terms of the Offering Plan. Finishes, furnishings, and other items depicted are not necessarily indicative of what will be specified in the Offering Plan or included in the purchase of a unit. Equal Housing Opportunity."
+    ],
+features: [
+     
+      "Central air",
+      "Washer/Dryer In-Unit",
+      "Dishwasher",
+      "City View",
+      "Balcony",
+      "Fitness Center",
+      "Roof deck",
+      "BBQ Zone",
+      "Parking (Garage)",
+      "Private Storage (Locker/cage)",
+      "Virtual Doorman",
+      "Pet Spa",
+      "Pets allowed",
+      "Bike room",
+      "Pied-a-terre allowed",
+      "Elevator",
+      "Smoke-free",
+      "Bike room",
+    ],
+    images: [
+      { url: "/listings/3c.jpg", alt: "Living room with park views" },
+      { url: "/listings/3c1.jpg", alt: "Modern chef's kitchen" },
+      { url: "/listings/3c2.jpg", alt: "Primary bedroom suite" },
+      { url: "/listings/3c3.jpg", alt: "Spa-like bathroom" },
+      { url: "/listings/IMG_5137.jpg", alt: "W/D in uint" },
+      
+  
+      { url: "/listings/Parisian.jpg", alt: "The Parisian" },
+      { url: "/listings/lobby.jpg", alt: "lobby The Parisian" },
+      { url: "/listings/rooftop.jpg", alt: "The Parisian Rooftop" }, 
+      { url: "/listings/Parisian_rooftop.jpg", alt: "The Parisian Rooftop TV Zone" },
+      { url: "/listings/IMG_5291.jpg", alt: "The Parisian Rooftop Sunset" },
+      { url: "/listings/gym.jpg", alt: "The Parisian Gym" },
+      { url: "/listings/pet_spa.jpg", alt: "The Parisian Pet Spa" },
+    ],
+    floorPlanImage: "/listings/4C.jpg",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7668371306034892046",
     dateAdded: "2026-06-15"
   },
 
@@ -373,7 +435,7 @@ features: [
       { url: "/listings/pet_spa.jpg", alt: "The Parisian Pet Spa" },
     ],
     floorPlanImage: "/listings/6D_floor.jpg",
-    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7669828547673853198",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7678065992391511310",
     dateAdded: "2026-06-15"
   },
   {
@@ -624,7 +686,69 @@ features: [
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
     dateAdded: "2026-06-15"
   },
- 
+ {
+    id: "TheParisian_3D",
+    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    address: "30-78 29th Street, Unit 3D",
+    neighborhood: "Astoria, NY 11102",
+    price: 798000,
+    type: "sale",
+    status: "active",
+    beds: 1,
+    baths: 1,
+    sqft: 578,
+    description: [
+       "Residence 3D is a well-composed one-bedroom home at THE PARISIAN, offering 578 square feet of interior living space and private storage included.",
+      "The residence is efficiently planned for everyday livability, with a practical layout that balances comfort, function, and refined design. The main living area offers a flexible setting for lounging and dining, while the bedroom provides a comfortable private retreat within the home.",
+      "Interiors are finished in THE PARISIAN’s calm and refined material palette, with oversized floor-to-ceiling windows, 7.5-inch wide-plank white oak flooring, solid wood interior doors, custom built-in closets, integrated dimmable LED lighting, USB/USB-C outlets throughout, and central heating and cooling with concealed linear diffusers.",
+      "The kitchen is designed with a clean European sensibility, featuring natural oak cabinetry, Taj Mahal quartz countertops and backsplash in a leathered finish, gas cooking, under-cabinet LED lighting, a Kohler Simplice faucet, and a fully integrated Fisher & Paykel appliance suite with paneled refrigerator and dishwasher.",
+      "The bathroom continues the same understated design language, with oversized porcelain tile, a floating vanity with rounded edges, fluted wood detailing, an integrated sink, a custom backlit medicine cabinet, Kohler fixtures in warm metallic finishes, hand-finished alabaster lighting, and Nuheat radiant-heated floors.",
+      "With its efficient one-bedroom layout, elevated finishes, custom built-in closets, and included private storage, Residence 3D offers a polished and highly functional home within THE PARISIAN.",
+      "Additional features include an in-unit washer and dryer, a Comelit smart video intercom system, and a private storage cage included with the residence. With its two-bedroom, two-bathroom layout, practical split-bedroom configuration, elevated finishes, and included private storage, Residence 4C offers a polished and highly functional home within THE PARISIAN.",
+      "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
+      "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
+      "Exclusive Sales and Marketing Agent: Acre NY Realty Inc. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. The complete offering terms are in an Offering Plan available from Sponsor. File No. CD25-0330. Sponsor: 3078 LLC, 2160 North Central Road, Suite 108, Fort Lee, NJ 07024. All artist’s renderings, images, floor plans, finishes, furnishings, amenities, and other details are for representational purposes only and are subject to variances and changes in accordance with the terms of the Offering Plan. Finishes, furnishings, and other items depicted are not necessarily indicative of what will be specified in the Offering Plan or included in the purchase of a unit. Equal Housing Opportunity."
+    ],
+features: [
+     
+      "Central air",
+      "Washer/Dryer In-Unit",
+      "Dishwasher",
+      "City View",
+      "Fitness Center",
+      "Roof deck",
+      "BBQ Zone",
+      "Parking (Garage)",
+      "Private Storage (Locker/cage)",
+      "Virtual Doorman",
+      "Pet Spa",
+      "Pets allowed",
+      "Bike room",
+      "Pied-a-terre allowed",
+      "Elevator",
+      "Smoke-free",
+      "Bike room",
+    ],
+    images: [
+      { url: "/listings/3c.jpg", alt: "Living room with park views" },
+      { url: "/listings/3c1.jpg", alt: "Modern chef's kitchen" },
+      { url: "/listings/3c2.jpg", alt: "Primary bedroom suite" },
+      { url: "/listings/3c3.jpg", alt: "Spa-like bathroom" },
+      { url: "/listings/IMG_5137.jpg", alt: "W/D in uint" },
+      
+  
+       { url: "/listings/Parisian.jpg", alt: "The Parisian" },
+      { url: "/listings/lobby.jpg", alt: "lobby The Parisian" },
+      { url: "/listings/rooftop.jpg", alt: "The Parisian Rooftop" }, 
+      { url: "/listings/Parisian_rooftop.jpg", alt: "The Parisian Rooftop TV Zone" },
+      { url: "/listings/IMG_5291.jpg", alt: "The Parisian Rooftop Sunset" },
+      { url: "/listings/gym.jpg", alt: "The Parisian Gym" },
+      { url: "/listings/pet_spa.jpg", alt: "The Parisian Pet Spa" },
+    ],
+    floorPlanImage: "/listings/3D.jpg",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
+    dateAdded: "2026-06-15"
+  },
 
    {
     id: "TheParisian_3C",
@@ -878,69 +1002,7 @@ features: [
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
     dateAdded: "2026-06-15"
   },
-   {
-    id: "TheParisian_3D",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
-    address: "30-78 29th Street, Unit 3D",
-    neighborhood: "Astoria, NY 11102",
-    price: 798000,
-    type: "sale",
-    status: "pending",
-    beds: 1,
-    baths: 1,
-    sqft: 578,
-    description: [
-       "Residence 3D is a well-composed one-bedroom home at THE PARISIAN, offering 578 square feet of interior living space and private storage included.",
-      "The residence is efficiently planned for everyday livability, with a practical layout that balances comfort, function, and refined design. The main living area offers a flexible setting for lounging and dining, while the bedroom provides a comfortable private retreat within the home.",
-      "Interiors are finished in THE PARISIAN’s calm and refined material palette, with oversized floor-to-ceiling windows, 7.5-inch wide-plank white oak flooring, solid wood interior doors, custom built-in closets, integrated dimmable LED lighting, USB/USB-C outlets throughout, and central heating and cooling with concealed linear diffusers.",
-      "The kitchen is designed with a clean European sensibility, featuring natural oak cabinetry, Taj Mahal quartz countertops and backsplash in a leathered finish, gas cooking, under-cabinet LED lighting, a Kohler Simplice faucet, and a fully integrated Fisher & Paykel appliance suite with paneled refrigerator and dishwasher.",
-      "The bathroom continues the same understated design language, with oversized porcelain tile, a floating vanity with rounded edges, fluted wood detailing, an integrated sink, a custom backlit medicine cabinet, Kohler fixtures in warm metallic finishes, hand-finished alabaster lighting, and Nuheat radiant-heated floors.",
-      "With its efficient one-bedroom layout, elevated finishes, custom built-in closets, and included private storage, Residence 3D offers a polished and highly functional home within THE PARISIAN.",
-      "Additional features include an in-unit washer and dryer, a Comelit smart video intercom system, and a private storage cage included with the residence. With its two-bedroom, two-bathroom layout, practical split-bedroom configuration, elevated finishes, and included private storage, Residence 4C offers a polished and highly functional home within THE PARISIAN.",
-      "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
-      "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
-      "Exclusive Sales and Marketing Agent: Acre NY Realty Inc. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. The complete offering terms are in an Offering Plan available from Sponsor. File No. CD25-0330. Sponsor: 3078 LLC, 2160 North Central Road, Suite 108, Fort Lee, NJ 07024. All artist’s renderings, images, floor plans, finishes, furnishings, amenities, and other details are for representational purposes only and are subject to variances and changes in accordance with the terms of the Offering Plan. Finishes, furnishings, and other items depicted are not necessarily indicative of what will be specified in the Offering Plan or included in the purchase of a unit. Equal Housing Opportunity."
-    ],
-features: [
-     
-      "Central air",
-      "Washer/Dryer In-Unit",
-      "Dishwasher",
-      "City View",
-      "Fitness Center",
-      "Roof deck",
-      "BBQ Zone",
-      "Parking (Garage)",
-      "Private Storage (Locker/cage)",
-      "Virtual Doorman",
-      "Pet Spa",
-      "Pets allowed",
-      "Bike room",
-      "Pied-a-terre allowed",
-      "Elevator",
-      "Smoke-free",
-      "Bike room",
-    ],
-    images: [
-      { url: "/listings/3c.jpg", alt: "Living room with park views" },
-      { url: "/listings/3c1.jpg", alt: "Modern chef's kitchen" },
-      { url: "/listings/3c2.jpg", alt: "Primary bedroom suite" },
-      { url: "/listings/3c3.jpg", alt: "Spa-like bathroom" },
-      { url: "/listings/IMG_5137.jpg", alt: "W/D in uint" },
-      
-  
-       { url: "/listings/Parisian.jpg", alt: "The Parisian" },
-      { url: "/listings/lobby.jpg", alt: "lobby The Parisian" },
-      { url: "/listings/rooftop.jpg", alt: "The Parisian Rooftop" }, 
-      { url: "/listings/Parisian_rooftop.jpg", alt: "The Parisian Rooftop TV Zone" },
-      { url: "/listings/IMG_5291.jpg", alt: "The Parisian Rooftop Sunset" },
-      { url: "/listings/gym.jpg", alt: "The Parisian Gym" },
-      { url: "/listings/pet_spa.jpg", alt: "The Parisian Pet Spa" },
-    ],
-    floorPlanImage: "/listings/3D.jpg",
-    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
-    dateAdded: "2026-06-15"
-  },
+   
   
   
 ]
