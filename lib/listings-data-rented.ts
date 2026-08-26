@@ -53,6 +53,52 @@ export const listings: Listing[] = [
     videoUrl: "https://www.tiktok.com/@annabnn/video/example5",
     dateAdded: "2026-06-10"
   },
+   {
+    id: "TheSoMa_3219",
+    title: "The Soma, Studio + Office",
+    address: "25 Water Street, Unit 3219",
+    neighborhood: "Financial District,  New York, NY 10004",
+    price: 5150,
+    type: "rent",
+    status: "rented",
+    beds: 0,
+    baths: 1,
+    sqft: 400,
+    description: [
+     ""
+    ],
+    features: [
+      "Pets allowed",
+      "Central air",
+      "View City, Skyline",
+      "Chef's Kitchen",
+      "Miele Appliances",
+      "Washer/Dryer",
+      "Dishwasher",
+      "Bike room",
+      "Elevator",
+      "Package room",
+      "Concierge",
+      "Laundry in building",
+      "Storage space",
+      "Doorman",
+      "Live-in super",
+      "Gym",
+      "Media room",
+      "Garden",
+      "Roof deck",
+    ],
+    images: [
+      { url: "/listings/Soma1.jpg", alt: "Dramatic loft living space" },
+      { url: "/listings/Soma2.jpg", alt: "Chef's kitchen" },
+      { url: "/listings/Soma3.jpg", alt: "Primary bedroom" },
+      { url: "/listings/Soma4.jpg", alt: "Architectural details" },
+     
+    ],
+    floorPlanImage: "/listings/Soma.jpg",
+    videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7487654460852817195",
+    dateAdded: "2026-06-18"
+  },
  
   {
     id: "3Eleven_2419",
@@ -148,23 +194,23 @@ export const listings: Listing[] = [
     dateAdded: "2026-01-04"
   },
   {
-    id: "TheSoMa_3219",
-    title: "The Soma, Studio + Office",
-    address: "25 Water Street, Unit 3219",
-    neighborhood: "Financial District,  New York, NY 10004",
-    price: 5150,
+    id: "22_Chapel_Street_14J",
+    title: "22 Chapel Street, 1 bedroom",
+    address: "22 Chapel Street, Unit 14J",
+    neighborhood: "Downtown Brooklyn, Brooklyn, NY 11201",
+    price: 4550,
     type: "rent",
     status: "rented",
-    beds: 0,
+    beds: 1,
     baths: 1,
-    sqft: 400,
+    sqft: 498,
     description: [
      ""
     ],
     features: [
       "Pets allowed",
       "Central air",
-      "View City, Skyline",
+      "View City, Park",
       "Chef's Kitchen",
       "Miele Appliances",
       "Washer/Dryer",
@@ -181,17 +227,18 @@ export const listings: Listing[] = [
       "Media room",
       "Garden",
       "Roof deck",
+      "Children's playroom"
     ],
     images: [
-      { url: "/listings/Soma1.jpg", alt: "Dramatic loft living space" },
-      { url: "/listings/Soma2.jpg", alt: "Chef's kitchen" },
-      { url: "/listings/Soma3.jpg", alt: "Primary bedroom" },
-      { url: "/listings/Soma4.jpg", alt: "Architectural details" },
+      { url: "/listings/22Chapel_1.png", alt: "Dramatic loft living space" },
+      { url: "/listings/22Chapel_2.png", alt: "Chef's kitchen" },
+      { url: "/listings/22Chapel_3.png", alt: "Primary bedroom" },
+      { url: "/listings/22Chapel_4.png", alt: "Architectural details" },
      
     ],
-    floorPlanImage: "/listings/Soma.jpg",
+    floorPlanImage: "/listings/22Chapel_floor.png",
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7487654460852817195",
-    dateAdded: "2026-06-18"
+    dateAdded: "2025-08-01"
   },
   
 ]
