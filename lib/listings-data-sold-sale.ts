@@ -60,7 +60,7 @@ features: [
     dateAdded: "2025-11-15",
     dateSold: "2026-04-12"
   },
-/*
+
   {
     id: "63_Meadow_Road_Cairo",
     title: "63 Meadow Road, Cairo, NY 12413",
@@ -117,6 +117,6 @@ features: [
     dateSold: "2026-09-01"
   },
  
-  */
+  
 ]
 
