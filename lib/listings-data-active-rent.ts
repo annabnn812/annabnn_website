@@ -21,7 +21,7 @@ export const listings: Listing[] = [
       "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
       "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
 "Base Rent: $4900/month"
-"Security Deposit: Equal to 1 Month's Rent (Refundable within 14 days of move-out)"
+"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)"
 "Brokerage Fee:$0.00 (Paid entirely by Landlord)"
 "Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)"
 "Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)"
@@ -95,7 +95,7 @@ features: [
       "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
       "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
 "Base Rent: $4850/month"
-"Security Deposit: Equal to 1 Month's Rent (Refundable within 14 days of move-out)"
+"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)"
 "Brokerage Fee:$0.00 (Paid entirely by Landlord)"
 "Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)"
 "Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)"
@@ -168,7 +168,7 @@ features: [
       "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
       "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
 "Base Rent: $4950/month"
-"Security Deposit: Equal to 1 Month's Rent (Refundable within 14 days of move-out)"
+"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)"
 "Brokerage Fee:$0.00 (Paid entirely by Landlord)"
 "Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)"
 "Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)"
