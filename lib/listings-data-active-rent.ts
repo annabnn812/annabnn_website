@@ -20,16 +20,16 @@ export const listings: Listing[] = [
       "Additional features include an in-unit washer and dryer, a Comelit smart video intercom system, and a private storage cage included with the residence. With its two-bedroom, two-bathroom layout, practical split-bedroom configuration, elevated finishes, and included private storage, Residence 5C offers a polished and highly functional home within THE PARISIAN.",
       "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
       "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
-"Base Rent: $4900/month"
-"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)"
-"Brokerage Fee:$0.00 (Paid entirely by Landlord)"
-"Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)"
-"Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)"
-"Condominium Move-In Deposit: $1,000.00 (Refundable by Building Management post-move provided no common area damage occurs)"
-"Condominium Board Review Fee:$200.00 (Non-refundable processing fee paid directly to Building Management)"
-"Utilities Included: Heating, Hot & Cold Water, Central A/C fixtures."
-"Tenant Responsible For: Electricity, Gas, and Cable/Internet."
-"Pet Policy: Pet-friendly (Up to 2 pets allowed; $0 pet fee)."
+"Base Rent: $4900/month",
+"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)",
+"Brokerage Fee:$0.00 (Paid entirely by Landlord)",
+"Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)",
+"Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)",
+"Condominium Move-In Deposit: $1,000.00 (Refundable by Building Management post-move provided no common area damage occurs)",
+"Condominium Board Review Fee:$200.00 (Non-refundable processing fee paid directly to Building Management)",
+"Utilities Included: Heating, Hot & Cold Water, Central A/C fixtures.",
+"Tenant Responsible For: Electricity, Gas, and Cable/Internet.",
+"Pet Policy: Pet-friendly (Up to 2 pets allowed; $0 pet fee).",
       "Exclusive Sales and Marketing Agent: Acre NY Realty Inc. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. The complete offering terms are in an Offering Plan available from Sponsor. File No. CD25-0330. Sponsor: 3078 LLC, 2160 North Central Road, Suite 108, Fort Lee, NJ 07024. All artist’s renderings, images, floor plans, finishes, furnishings, amenities, and other details are for representational purposes only and are subject to variances and changes in accordance with the terms of the Offering Plan. Finishes, furnishings, and other items depicted are not necessarily indicative of what will be specified in the Offering Plan or included in the purchase of a unit. Equal Housing Opportunity."
     ],
 features: [
@@ -94,16 +94,16 @@ features: [
       "Additional features include an in-unit washer and dryer, a Comelit smart video intercom system, and a private storage cage included with the residence. With its two-bedroom, two-bathroom layout, practical split-bedroom configuration, elevated finishes, and included private storage, Residence 4B offers a polished and highly functional home within THE PARISIAN.",
       "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
       "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
-"Base Rent: $4850/month"
-"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)"
-"Brokerage Fee:$0.00 (Paid entirely by Landlord)"
-"Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)"
-"Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)"
-"Condominium Move-In Deposit: $1,000.00 (Refundable by Building Management post-move provided no common area damage occurs)"
-"Condominium Board Review Fee:$200.00 (Non-refundable processing fee paid directly to Building Management)"
-"Utilities Included: Heating, Hot & Cold Water, Central A/C fixtures."
-"Tenant Responsible For: Electricity, Gas, and Cable/Internet."
-"Pet Policy: Pet-friendly (Up to 2 pets allowed; $0 pet fee)."
+"Base Rent: $4850/month",
+"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)",
+"Brokerage Fee:$0.00 (Paid entirely by Landlord)",
+"Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)",
+"Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)",
+"Condominium Move-In Deposit: $1,000.00 (Refundable by Building Management post-move provided no common area damage occurs)",
+"Condominium Board Review Fee:$200.00 (Non-refundable processing fee paid directly to Building Management)",
+"Utilities Included: Heating, Hot & Cold Water, Central A/C fixtures.",
+"Tenant Responsible For: Electricity, Gas, and Cable/Internet.",
+"Pet Policy: Pet-friendly (Up to 2 pets allowed; $0 pet fee).",
       "Exclusive Sales and Marketing Agent: Acre NY Realty Inc. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. The complete offering terms are in an Offering Plan available from Sponsor. File No. CD25-0330. Sponsor: 3078 LLC, 2160 North Central Road, Suite 108, Fort Lee, NJ 07024. All artist’s renderings, images, floor plans, finishes, furnishings, amenities, and other details are for representational purposes only and are subject to variances and changes in accordance with the terms of the Offering Plan. Finishes, furnishings, and other items depicted are not necessarily indicative of what will be specified in the Offering Plan or included in the purchase of a unit. Equal Housing Opportunity."
     ],
 features: [
@@ -167,16 +167,16 @@ features: [
       "Additional features include an in-unit washer and dryer, a Comelit smart video intercom system, and a private storage cage included with the residence. With its two-bedroom, two-bathroom layout, practical split-bedroom configuration, elevated finishes, and included private storage, Residence 5B offers a polished and highly functional home within THE PARISIAN.",
       "Residents enjoy a thoughtfully curated amenity collection, including a landscaped rooftop terrace with partially covered lounge areas, outdoor grilling and dining, open-sky gathering space, outdoor cinema, and unobstructed Manhattan skyline views. Additional amenities include a full-height glass-enclosed fitness center with TRUE equipment, a pet spa, bicycle storage, package room, private storage, and 14 on-site deeded parking spaces available for purchase.",
       "Located in the heart of Astoria, THE PARISIAN is surrounded by neighborhood restaurants, cafés, bars, parks, and grocery stores, with convenient access to the N and W trains at 30th Avenue and Broadway. Nearby bus service includes Q104, Q18, Q102, and Q69.",
-"Base Rent: $4950/month"
-"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)"
-"Brokerage Fee:$0.00 (Paid entirely by Landlord)"
-"Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)"
-"Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)"
-"Condominium Move-In Deposit: $1,000.00 (Refundable by Building Management post-move provided no common area damage occurs)"
-"Condominium Board Review Fee:$200.00 (Non-refundable processing fee paid directly to Building Management)"
-"Utilities Included: Heating, Hot & Cold Water, Central A/C fixtures."
-"Tenant Responsible For: Electricity, Gas, and Cable/Internet."
-"Pet Policy: Pet-friendly (Up to 2 pets allowed; $0 pet fee)."
+"Base Rent: $4950/month",
+"Security Deposit: Equal to 1 Months Rent (Refundable within 14 days of move-out)",
+"Brokerage Fee:$0.00 (Paid entirely by Landlord)",
+"Application / Credit Check Fee: $20.00 per applicant (Statutory maximum)",
+"Condominium Move-In Fee: $500.00 (Non-refundable, paid to Building Management for elevator reservation & processing)",
+"Condominium Move-In Deposit: $1,000.00 (Refundable by Building Management post-move provided no common area damage occurs)",
+"Condominium Board Review Fee:$200.00 (Non-refundable processing fee paid directly to Building Management)",
+"Utilities Included: Heating, Hot & Cold Water, Central A/C fixtures.",
+"Tenant Responsible For: Electricity, Gas, and Cable/Internet.",
+"Pet Policy: Pet-friendly (Up to 2 pets allowed; $0 pet fee).",
       "Exclusive Sales and Marketing Agent: Acre NY Realty Inc. Sponsor reserves the right to make changes in accordance with the terms of the offering plan. The complete offering terms are in an Offering Plan available from Sponsor. File No. CD25-0330. Sponsor: 3078 LLC, 2160 North Central Road, Suite 108, Fort Lee, NJ 07024. All artist’s renderings, images, floor plans, finishes, furnishings, amenities, and other details are for representational purposes only and are subject to variances and changes in accordance with the terms of the Offering Plan. Finishes, furnishings, and other items depicted are not necessarily indicative of what will be specified in the Offering Plan or included in the purchase of a unit. Equal Housing Opportunity."
     ],
 features: [
