@@ -876,7 +876,7 @@ features: [
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
     dateAdded: "2026-06-15"
   },
-  {
+  /*{
     id: "TheParisian_4B",
     title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
     address: "30-78 29th Street, Unit 4B",
@@ -939,7 +939,7 @@ features: [
     floorPlanImage: "/listings/3B.jpg",
     videoUrl: "https://www.tiktok.com/@anna_ny_real_estate/video/7649416715868146958",
     dateAdded: "2026-06-15"
-  },
+  },*/
    {
     id: "TheParisian_4C",
     title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
