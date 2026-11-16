@@ -122,7 +122,7 @@ features: [
   },*/
    {
     id: "TheParisian_7C",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 7C",
     address: "30-78 29th Street, Unit 7C",
     neighborhood: "Astoria, NY 11102",
     price: 1495000,
@@ -188,7 +188,7 @@ features: [
  
   {
     id: "TheParisian_6C",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 6C",
     address: "30-78 29th Street, Unit 6C",
     neighborhood: "Astoria, NY 11102",
     price: 1215000,
@@ -251,7 +251,7 @@ features: [
 
   {
     id: "TheParisian_2B",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 2B",
     address: "30-78 29th Street, Unit 2B",
     neighborhood: "Astoria, NY 11102",
     price: 995000,
@@ -314,7 +314,7 @@ features: [
   },
  {
     id: "TheParisian_2C",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 2C",
     address: "30-78 29th Street, Unit 2C",
     neighborhood: "Astoria, NY 11102",
     price: 995000,
@@ -377,7 +377,7 @@ features: [
   },
  {
     id: "TheParisian_6D",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 6D",
     address: "30-78 29th Street, Unit 6D",
     neighborhood: "Astoria, NY 11102",
     price: 1150000,
@@ -440,7 +440,7 @@ features: [
   },
   {
     id: "TheParisian_3A",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 3A",
     address: "30-78 29th Street, Unit 3A",
     neighborhood: "Astoria, NY 11102",
     price: 855000,
@@ -502,7 +502,7 @@ features: [
   
    {
     id: "TheParisian_1A",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 1A",
     address: "30-78 29th Street, Unit 1A",
     neighborhood: "Astoria, NY 11102",
     price: 585000,
@@ -565,7 +565,7 @@ features: [
   },
    {
     id: "TheParisian_3E",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 3E",
     address: "30-78 29th Street, Unit 3E",
     neighborhood: "Astoria, NY 11102",
     price: 598000,
