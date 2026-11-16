@@ -3,7 +3,7 @@ import { Listing } from "./listings"
 export const listings: Listing[] = [
    {
     id: "TheParisian_7A",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 7A",
     address: "30-78 29th Street, Unit 7A",
     neighborhood: "Astoria, NY 11102",
     price: 1620000,
@@ -70,7 +70,7 @@ features: [
   },
  {
     id: "TheParisian_4A",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 4A",
     address: "30-78 29th Street, Unit 4A",
     neighborhood: "Astoria, NY 11102",
     price: 875000,
@@ -132,7 +132,7 @@ features: [
   },
  {
     id: "TheParisian_3C",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 3C",
     address: "30-78 29th Street, Unit 3C",
     neighborhood: "Astoria, NY 11102",
     price: 1040000,
@@ -195,7 +195,7 @@ features: [
   },
   {
     id: "TheParisian_3B",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 3B",
     address: "30-78 29th Street, Unit 3B",
     neighborhood: "Astoria, NY 11102",
     price: 1040000,
@@ -260,7 +260,7 @@ features: [
   },
  {
     id: "TheParisian_4C",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 4C",
     address: "30-78 29th Street, Unit 4C",
     neighborhood: "Astoria, NY 11102",
     price: 1055000,
@@ -323,7 +323,7 @@ features: [
   },
    {
     id: "TheParisian_4B",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 4B",
     address: "30-78 29th Street, Unit 4B",
     neighborhood: "Astoria, NY 11102",
     price: 1055000,
