@@ -6,7 +6,7 @@ export const listings: Listing[] = [
     title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
     address: "30-78 29th Street, Unit 3D",
     neighborhood: "Astoria, NY 11102",
-    price: 798000,
+    price: 3500,
     type: "rent",
     status:  "rented",
     beds: 1,
