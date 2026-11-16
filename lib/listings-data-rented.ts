@@ -3,7 +3,7 @@ import { Listing } from "./listings"
 export const listings: Listing[] = [
     {
     id: "TheParisian_3D",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 3D",
     address: "30-78 29th Street, Unit 3D",
     neighborhood: "Astoria, NY 11102",
     price: 3500,
@@ -66,7 +66,7 @@ features: [
   },
    {
     id: "TheParisian_4B",
-    title: "THE PARISIAN is a boutique luxury condominium located in the heart of Astoria",
+    title: "THE PARISIAN, Unit 4B",
     address: "30-78 29th Street, Unit 4B",
     neighborhood: "Astoria, NY 11102",
     price: 4850,
